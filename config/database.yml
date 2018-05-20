@@ -9,8 +9,8 @@ development:
   database: pixis_dev
   host: localhost
   port: 5432
-  username: <%= ENV.fetch("PG_USER") %>
-  password: <%= ENV.fetch("PG_PWD") %>
+  username: <%= ENV.fetch("POSTGRESQL_ADDON_USER") %>
+  password: <%= ENV.fetch("POSTGRESQL_ADDON_PASSWORD") %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,8 +20,8 @@ test:
   database: pixis_test
   host: localhost
   port: 5432
-  username: <%= ENV.fetch("PG_USER") %>
-  password: <%= ENV.fetch("PG_PWD") %>
+  username: <%= ENV.fetch("POSTGRESQL_ADDON_USER") %>
+  password: <%= ENV.fetch("POSTGRESQL_ADDON_PASSWORD") %>
 
 production:
   <<: *default
