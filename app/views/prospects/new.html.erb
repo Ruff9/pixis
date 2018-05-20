@@ -1,0 +1,17 @@
+<h1 class='page-title'>Créer prospect</h1>
+
+<% p @prospect %>
+
+<%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
+  <%= f.label :email, 'Email'  %>
+  <%= f.text_field :email, label: 'Email'  %>
+  <%= f.label :message, 'Message'  %>
+  <%= f.text_area :message, size: "60x12" %>
+  <%= f.submit 'Enregistrer', class: 'prospect-form-submit' %>
+<% end %>
+
+<ul class='projects-list'>
+  <% @prospects.each do |p| %>
+    <li><%= p.email %></li>
+  <% end %>
+</ul>

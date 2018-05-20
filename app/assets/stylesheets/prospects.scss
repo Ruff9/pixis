@@ -1,0 +1,14 @@
+.prospect-form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+  margin: auto;
+  padding: 10px;
+
+  border: 4px solid grey;
+}
+
+.prospect-form-submit {
+  margin-top: 10px;
+}
