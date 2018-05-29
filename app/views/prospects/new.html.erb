@@ -1,7 +1,5 @@
 <h1 class='page-title'>Créer prospect</h1>
 
-<% p @prospect %>
-
 <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
   <%= f.label :email, 'Email'  %>
   <%= f.text_field :email, label: 'Email'  %>
