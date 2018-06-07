@@ -1,3 +1,19 @@
+body {
+  margin: 0;
+}
+
+.site-header {
+  background-color: grey;
+  height: $header-height;
+}
+
+.site-header-container {
+  max-width: 750px;
+  margin: auto;
+  height: $header-height;
+  padding: 10px 0;
+}
+
 .page-title {
   text-align: center;
 }
