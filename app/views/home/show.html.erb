@@ -1,1 +1,18 @@
-<p>Pixis <3</p>
+<div class='wrapper home-container'>
+  <button id="contact-modal-trigger">Contact</button>
+
+  <div id="contact-modal" class="modal">
+
+    <div class="contact-modal-content">
+      <span class="close">&times;</span>
+      <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
+        <%= f.label :email, 'Email'  %>
+        <%= f.text_field :email, label: 'Email'  %>
+        <%= f.label :message, 'Message'  %>
+        <%= f.text_area :message, size: "60x12" %>
+        <%= f.submit 'Enregistrer', class: 'prospect-form-submit' %>
+      <% end %>
+    </div>
+
+  </div>
+</div>

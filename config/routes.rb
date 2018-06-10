@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resource :prospects, only: [:new, :create]
   resources :videos, only: :index
 
-  root 'prospects#new'
+  root 'home#show'
 end
