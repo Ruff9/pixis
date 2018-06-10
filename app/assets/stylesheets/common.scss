@@ -2,16 +2,25 @@ body {
   margin: 0;
 }
 
-.site-header {
+.wrapper {
+  max-width: $wrapper-width;
+  margin: auto;
+}
+
+.header {
   background-color: grey;
   height: $header-height;
 }
 
-.site-header-container {
-  max-width: 750px;
-  margin: auto;
+.header-container {
   height: $header-height;
   padding: 10px 0;
+}
+
+.header-root-link {
+  text-decoration: none;
+  margin-right: 30px;
+  color: $font-color;
 }
 
 .page-title {
