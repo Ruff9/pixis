@@ -1,8 +1,14 @@
-<div class='wrapper home-container'>
-  <button id="contact-modal-trigger">Contact</button>
+<div class='home-container'>
+
+  <div class='header-video-container'>
+    <%= video_tag "demo2018.mp4", controls: false, autoplay: true, muted: true, loop: true, class: "header-video", type: "video/mp4" %>
+  </div>
+
+  <div class='wrapper'>
+    <button id="contact-modal-trigger">Contact</button>
+  </div>
 
   <div id="contact-modal" class="modal">
-
     <div class="contact-modal-content">
       <span class="close">&times;</span>
       <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
@@ -13,6 +19,5 @@
         <%= f.submit 'Enregistrer', class: 'prospect-form-submit' %>
       <% end %>
     </div>
-
   </div>
 </div>

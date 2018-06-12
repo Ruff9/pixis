@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.notice, .alert {
+  margin: 0;
+}
+
 .wrapper {
   max-width: $wrapper-width;
   margin: auto;
