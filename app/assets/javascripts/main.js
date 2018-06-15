@@ -7,9 +7,9 @@ var headerVideo = function() {
   var video = document.querySelector('.header-video');
   coverVid(video, 1920, 1080);
 
-  if(isMobile()) {
-    video.play();
-  }
+  // if(isMobile()) {
+  //   video.play();
+  // }
 }
 
 var contactModal = function() {
@@ -32,6 +32,6 @@ var contactModal = function() {
   }
 }
 
-function isMobile() {
-  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-};
+// function isMobile() {
+//   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+// };
