@@ -10,3 +10,22 @@
   height: 400px;
   margin-bottom: 50px;
 }
+
+.home-videos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-video-container {
+  width: 40%;
+}
+
+.home-video-title {
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+.home-video-description {
+  text-align: justify;
+}

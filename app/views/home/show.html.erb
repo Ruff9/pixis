@@ -8,6 +8,20 @@
     <button id="contact-modal-trigger">Contact</button>
   </div>
 
+  <div class='home-videos-wrapper wrapper'>
+    <% @home_videos.each do |video| %>
+      <div class='home-video-container'>
+        <header class='home-video-title'><%= video.title %></header>
+
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/<%= video.vimeo_reference %>?color=f07e12&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <p class='home-video-description'><%= video.presentation %></p>
+      </div>
+    <% end %>
+  </div>
+
   <div id="contact-modal" class="modal">
     <div class="contact-modal-content">
       <span class="close">&times;</span>
