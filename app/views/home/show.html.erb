@@ -22,6 +22,16 @@
     <% end %>
   </div>
 
+  <header class='home-texts-header wrapper'>Historique Pixis</header>
+
+  <div class='home-texts-wrapper wrapper'>
+    <% @home_texts.each do |text| %>
+      <div class='home-text-container'>
+        <%= text.content %>
+      </div>
+    <% end %>
+  </div>
+
   <div id="contact-modal" class="modal">
     <div class="contact-modal-content">
       <span class="close">&times;</span>

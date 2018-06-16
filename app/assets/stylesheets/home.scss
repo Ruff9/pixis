@@ -38,3 +38,26 @@
     padding: 0;
   }
 }
+
+.home-texts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-texts-header {
+  font-size: 1.5em;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.home-text-container {
+  width: 100%;
+  padding: 20px;
+  text-align: justify;
+
+  @media (min-width: $medium-breakpoint) {
+    width: 40%;
+    padding: 0;
+  }
+}

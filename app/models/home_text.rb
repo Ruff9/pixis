@@ -1,0 +1,2 @@
+class HomeText < ApplicationRecord
+end
