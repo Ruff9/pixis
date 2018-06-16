@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: $background-color;
 }
 
 .notice, .alert {
@@ -18,17 +19,30 @@ body {
 }
 
 .header {
-  background-color: grey;
+  background-color: $background-color;
   height: $header-height;
 }
 
 .header-container {
   height: $header-height;
-  padding: 10px 0;
+  padding: 10px;
+
+  @media (min-width: $medium-breakpoint) {
+    padding: 10px 0;
+    max-width: 95%;
+  }
 }
 
 .header-root-link {
   text-decoration: none;
   margin-right: 30px;
+}
+
+.header-logo {
+  height: 30px;
+}
+
+.header-link {
+  text-decoration: none;
   color: $font-color;
 }
