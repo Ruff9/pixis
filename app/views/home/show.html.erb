@@ -40,16 +40,5 @@
     <button class='js-contact-modal-trigger contact-button'>Contact</button>
   </div>
 
-  <div id="contact-modal" class="modal">
-    <div class="contact-modal-content">
-      <span class="close">&times;</span>
-      <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
-        <%= f.label :email, 'Email'  %>
-        <%= f.text_field :email, label: 'Email'  %>
-        <%= f.label :message, 'Message'  %>
-        <%= f.text_area :message, size: "60x12" %>
-        <%= f.submit 'Enregistrer', class: 'prospect-form-submit' %>
-      <% end %>
-    </div>
-  </div>
+  <%= render "contact_modal" %>
 </div>

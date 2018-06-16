@@ -4,6 +4,15 @@ body {
   background-color: $background-color;
 }
 
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  border: 1px solid #999;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+}
+
 .notice, .alert {
   margin: 0;
 }

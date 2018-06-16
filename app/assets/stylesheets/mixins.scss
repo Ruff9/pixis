@@ -1,8 +1,4 @@
-.home-contact-button-container {
-  margin: 10px auto;
-}
-
-.contact-button {
+@mixin button() {
   display: inline-block;
   border: none;
   padding: 1rem 2rem;
@@ -18,9 +14,9 @@
               transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-}
 
-.contact-button:hover,
-.contact-button:focus {
+  &:hover, &:focus {
     background: $hover-button-color;
+    outline: none;
+  }
 }
