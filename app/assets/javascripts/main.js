@@ -10,11 +10,13 @@ var headerVideo = function() {
 
 var contactModal = function() {
   var modal = document.getElementById('contact-modal');
-  var btn = document.getElementById('contact-modal-trigger');
+  var buttons = document.getElementsByClassName('js-contact-modal-trigger');
   var span = document.getElementsByClassName("close")[0];
 
-  btn.onclick = function() {
-    modal.style.display = "flex";
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+      modal.style.display = "flex";
+    }
   }
 
   span.onclick = function() {
