@@ -9,6 +9,10 @@
   width: 100vw;
   height: 400px;
   margin-bottom: 50px;
+
+  @media (min-width: $medium-breakpoint) {
+    height: 550px;
+  }
 }
 
 .home-contact-button-container {
@@ -29,7 +33,7 @@
   width: 100%;
 
   @media (min-width: $medium-breakpoint) {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -69,7 +73,7 @@
   text-align: justify;
 
   @media (min-width: $medium-breakpoint) {
-    width: 40%;
+    width: 45%;
     padding: 0;
   }
 }
