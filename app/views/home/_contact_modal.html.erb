@@ -1,6 +1,6 @@
 <div id="contact-modal" class="modal">
   <div class="contact-modal-content">
-    <span class="close">&times;</span>
+    <span id="close-button" class='close'>&times;</span>
     <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
       <%= f.label :email, 'Email', class: 'prospect-form-label'  %>
       <%= f.text_field :email, label: 'Email', class: 'prospect-form-email'  %>
