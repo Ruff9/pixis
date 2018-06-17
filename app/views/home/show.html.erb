@@ -36,6 +36,18 @@
     <% end %>
   </div>
 
+  <div class='home-team-wrapper wrapper'>
+    <% @team_members.each do |member| %>
+      <div class='home-team-container'>
+        <div class='home-team-picture-container'>
+          <%= image_tag member.image, class: 'home-team-picture' %>
+        </div>
+        <div class='home-team-name'><%= member.name %></div>
+        <div class='home-team-description'><%= member.description %></div>
+      </div>
+    <% end %>
+  </div>
+
   <div class='home-contact-button-container wrapper'>
     <button class='js-contact-modal-trigger contact-button'>Contact</button>
   </div>

@@ -3,6 +3,7 @@ class HomeController < ApplicationController
     @prospect = Prospect.new
     @home_videos = HomeVideo.all
     @home_texts = HomeText.all
+    @team_members = TeamMember.all
   end
 
   private
