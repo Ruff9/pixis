@@ -123,15 +123,27 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
+  padding: 0 20px;
+  max-width: 80%;
 
   &:after {
     content: "";
     flex: auto;
   }
+
+  @media (min-width: $medium-breakpoint) {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 .home-client-picture {
-  height: 70px;
+  height: 50px;
   margin-right: 10px;
   margin-bottom: 20px;
+
+  @media (min-width: $medium-breakpoint) {
+    margin-right: 30px;
+    height: 60px;
+  }
 }
