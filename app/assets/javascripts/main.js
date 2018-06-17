@@ -1,25 +1,31 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   contactModal();
-  $('.header-video').coverVid(1920, 1080);
+  headerVideo();
 });
 
+var headerVideo = function() {
+  var video = document.querySelector('.header-video');
+  coverVid(video, 1920, 1080);
+}
+
 var contactModal = function() {
-  var modal = $('#contact-modal');
-  var buttons = $('.js-contact-modal-trigger');
+  var modal = document.getElementById('contact-modal');
+  var buttons = document.getElementsByClassName('js-contact-modal-trigger');
+  var span = document.getElementsByClassName("close")[0];
 
-  buttons.each(function(i) {
-    $(this).click(function() {
-      modal.css('display', 'flex');
-    })
-  })
-
-  $("#close-button").click(function() {
-    modal.css('display', 'none');
-  })
-
-  $(window).click(function(event) {
-    if (event.target == modal[0]) {
-      modal.css('display', 'none');
+  for(var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+      modal.style.display = "flex";
     }
-  })
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 }

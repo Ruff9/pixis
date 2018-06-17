@@ -5,13 +5,9 @@ class ProspectsController < ApplicationController
 
   def create
     @prospect = Prospect.new(prospect_params)
+    @prospect.save
 
-    if @prospect.save
-      redirect_to root_path
-    else
-      p '*'*52
-      p @prospect.errors
-    end
+    redirect_to root_path
   end
 
   private
