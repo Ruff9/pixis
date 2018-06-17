@@ -52,5 +52,17 @@
     <button class='js-contact-modal-trigger contact-button'>Contact</button>
   </div>
 
+  <header class='home-texts-header wrapper'>Ils nous font confiance</header>
+
+  <div class='home-client-wrapper wrapper'>
+    <% @clients.each do |client| %>
+      <div class='home-client-container'>
+        <div class='home-client-picture-container'>
+          <%= image_tag client.image, class: 'home-client-picture' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
   <%= render "contact_modal" %>
 </div>

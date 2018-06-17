@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @home_videos = HomeVideo.all
     @home_texts = HomeText.all
     @team_members = TeamMember.all
+    @clients = Client.all
   end
 
   private
