@@ -3,7 +3,7 @@
     <span class="close">&times;</span>
     <%= form_for @prospect, html: {class: "prospect-form"} do |f| %>
       <%= f.label :email, 'Email', class: 'prospect-form-label'  %>
-      <%= f.text_field :email, label: 'Email', class: 'prospect-form-email'  %>
+      <%= f.email_field :email, label: 'Email*', class: 'prospect-form-email', id: 'prospect-email-field', required: true, oninvalid: "this.setCustomValidity('Merci de saisir une adresse mail')"  %>
       <%= f.label :message, 'Message', class: 'prospect-form-label'  %>
       <%= f.text_area :message, size: "60x8", class: 'prospect-form-message' %>
       <%= f.submit 'Envoyer', class: 'prospect-form-submit' %>
