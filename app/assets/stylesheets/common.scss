@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: $text-font;
   background-color: $background-color;
 }
 
@@ -34,11 +34,14 @@ button, input, select, textarea {
 
 .header-container {
   height: $header-height;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-sizing: border-box;
 
   @media (min-width: $medium-breakpoint) {
-    padding: 10px 0;
-    max-width: 95%;
+    padding: 0;
   }
 }
 
@@ -51,7 +54,34 @@ button, input, select, textarea {
   height: 30px;
 }
 
+.header-links-container {
+  width: 100%;
+}
+
 .header-link {
   text-decoration: none;
   color: $font-color;
+  margin-left: 20px;
+}
+
+.header-social-links-container {
+  display: flex;
+}
+
+.header-social-link {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.header-social-icon {
+  fill: $secondary-color;
+}
+
+.footer {
+  background-color: $secondary-color;
+  width: 100%;
+  margin-top: 40px;
+  padding: 50px 0;
+  text-align: center;
+  color: $font-white-color;
 }

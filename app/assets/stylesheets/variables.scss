@@ -1,11 +1,18 @@
+$primary-color: #EF7D12;
+$secondary-color: #253144;
+
 $background-color: white;
 
 $wrapper-width: 1100px;
 $header-height: 50px;
 
 $font-color: black;
+$font-white-color: white;
 
 $medium-breakpoint: 600px;
 
-$button-color: #0069ed;
-$hover-button-color: #0053ba;
+$button-color: $primary-color;
+$hover-button-color: lighten($primary-color, 10%);
+
+$title-font: 'Montserrat', sans-serif;
+$text-font: 'Roboto', sans-serif;

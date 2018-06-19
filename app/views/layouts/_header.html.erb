@@ -3,6 +3,22 @@
     <%= link_to root_path, class: 'header-root-link' do %>
       <%= image_tag 'logo-pixis', class: 'header-logo' %>
     <% end %>
-    <%#= link_to 'Videos', videos_path, class: 'header-link' %>
+
+    <div class='header-links-container'>
+      <%= link_to 'Videos', '#', class: 'header-link' %>
+      <%= link_to 'Animations', '#', class: 'header-link' %>
+    </div>
+
+    <div class='header-social-links-container'>
+      <%= link_to root_path, class: 'header-social-link' do %>
+        <%= show_svg('facebook.svg') %>
+      <% end %>
+      <%= link_to root_path, class: 'header-social-link' do %>
+        <%= show_svg('instagram.svg') %>
+      <% end %>
+      <%= link_to root_path, class: 'header-social-link' do %>
+        <%= show_svg('linkedin.svg') %>
+      <% end %>
+    </div>
   </div>
 </header>
